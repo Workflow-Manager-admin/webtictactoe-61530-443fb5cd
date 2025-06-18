@@ -1,0 +1,94 @@
+:root {
+  --ttt-primary: #4CAF50;
+  --ttt-secondary: #FFC107;
+  --ttt-accent: #2196F3;
+}
+
+.ttt-container {
+  background: #fff;
+  color: #222;
+  max-width: 340px;
+  margin: 40px auto;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px 0 rgba(60,64,67,.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.ttt-title {
+  font-size: 2rem;
+  color: var(--ttt-primary);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.ttt-status {
+  font-size: 1.22rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.4;
+}
+
+.ttt-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1.2rem;
+  width: 228px;
+}
+
+.ttt-board-row {
+  display: flex;
+  width: 100%;
+}
+
+.ttt-square {
+  flex: 1;
+  width: 76px;
+  height: 76px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: #fafbfc;
+  border: 2px solid var(--ttt-secondary);
+  border-radius: 0.33rem;
+  outline: none;
+  margin: 2px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.12s;
+}
+.ttt-square:disabled {
+  background: #e7e8ea;
+  cursor: not-allowed;
+  color: #b0b0b0;
+}
+
+.ttt-playerX { color: var(--ttt-primary); font-weight: 700; }
+.ttt-playerO { color: var(--ttt-accent); font-weight: 700; }
+.ttt-winner { font-size: 1.22em; font-weight: 900; color: var(--ttt-secondary); }
+.ttt-instructions {
+  font-size: 0.95rem;
+  color: #678;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.ttt-restart-btn {
+  margin-top: 0.7rem;
+  border: none;
+  background: var(--ttt-accent);
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 22px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 8px 0 rgba(60,64,67,.12);
+  transition: background 0.16s, color 0.16s;
+}
+.ttt-restart-btn:hover, .ttt-restart-btn:focus {
+  background: var(--ttt-primary);
+  color: #fff;
+}
